@@ -19,29 +19,32 @@ MySecondtTest
     
 MyThirdTest
     Log    Hello 3 world
-        
-# MySecondTestWithSelenium
-    # Open Browser    https://www.google.com    chrome
-    # Set Browser Implicit Wait    5
-    # Input Text    name=q    automation
-    # Press Keys    name=q    ENTER   
-    # #Click Element    name=btnK        
-    # Sleep    2
-    # Close Browser    
-    # Log    test completed    
+
+MyFourthTest
+    Log    Hello 4 world
+
+GoogleAccessTest
+    Open Browser    https://www.google.com    chrome
+    Set Browser Implicit Wait    5
+    Input Text    name=q    automation
+    Press Keys    name=q    ENTER   
+    #Click Element    name=btnK        
+    Sleep    2
+    Close Browser    
+    Log    test completed    
     
-# # SampleLoginTest
-    # # [Documentation]    This is a sample thingy
-    # # Open Browser    ${URL}    chrome
-    # # Maximize Browser Window
-    # # Set Browser Implicit Wait    5
-    # # Clear Element Text    id=txtUsername
-    # # LoginTo
-    # # Sleep    2
-    # # Click Element    id=welcome
-    # # Click Element    link=Logout               
-    # # Log    the ${TEST_NAME} completed
-    # # Log    This test was executed by %{username} on %{os}            
+SampleLoginTest
+    [Documentation]    This is a sample thingy
+    Open Browser    ${URL}    chrome
+    Maximize Browser Window
+    Set Browser Implicit Wait    5
+    Clear Element Text    id=txtUsername
+    LoginTo
+    Sleep    2
+    Click Element    id=welcome
+    Click Element    link=Logout               
+    Log    the ${TEST_NAME} completed
+    Log    This test was executed by %{username} on %{os}            
     
 *** Variables ***
 #SCALAR : A VARIABLE WITH ONE VALUE
